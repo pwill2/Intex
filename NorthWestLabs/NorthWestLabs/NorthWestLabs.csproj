@@ -906,6 +906,8 @@
     <Content Include="Views\Home\Blank.cshtml" />
     <Content Include="Views\Home\Login.cshtml" />
     <Content Include="Views\Home\Reports.cshtml" />
+    <Content Include="Views\Home\Reports4.cshtml" />
+    <Content Include="Views\Home\Reports5.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
