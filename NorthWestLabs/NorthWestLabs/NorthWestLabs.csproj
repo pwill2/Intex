@@ -905,6 +905,7 @@
     <Content Include="Views\Home\Grid.cshtml" />
     <Content Include="Views\Home\Blank.cshtml" />
     <Content Include="Views\Home\Login.cshtml" />
+    <Content Include="Views\Home\Reports2.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
