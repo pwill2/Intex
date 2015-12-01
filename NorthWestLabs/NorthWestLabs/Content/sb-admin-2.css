@@ -27,6 +27,14 @@ body {
     }
 }
 
+.col-sm-3 {
+    min-height: 250px;
+    border:2px solid orange;
+    border-radius:7px;
+    margin-right:5px;
+    max-width:250px;
+}
+
 .navbar-top-links {
     margin-right: 0;
 }
