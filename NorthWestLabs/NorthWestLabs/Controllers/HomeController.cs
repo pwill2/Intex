@@ -73,6 +73,32 @@ namespace NorthWestLabs.Controllers
             return View("Login");
         }
 
+        public ActionResult Reports()
+        {
+            return View();
+        }
+
+        public ActionResult Reports4()
+        {
+            return View();
+        }
+        public ActionResult Reports5()
+        {
+            return View();
+        }
+        public ActionResult customers()
+        {
+            return View();
+        }
+        public ActionResult customers2()
+        {
+            return View();
+        }
+        public ActionResult customers3()
+        {
+            return View();
+        }
+
         public ActionResult Reports2()
         {
             return View("Reports2");
