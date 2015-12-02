@@ -4,7 +4,9 @@
     overflow-y: scroll;
 }
 
-#busSil{
+#centered{
     margin: 0 auto;
     display: block;
 }
+
+

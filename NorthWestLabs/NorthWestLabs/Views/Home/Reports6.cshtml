@@ -1,13 +1,20 @@
-﻿@{
-    ViewBag.Title = "Reports5";
+﻿
+@{
+    ViewBag.Title = "Reports6";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
+
 <div class="container-fluid">
     <div class="row">
         <div class="col-lg-12">
             <h1 class="page-header">Summary</h1>
         </div>
+
         <!-- /.col-lg-12 -->
+    </div>
+    <div class="alert alert-success alert-dismissable">
+        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+        Your report was successfully saved! <a href="#" class="alert-link"></a>.
     </div>
     <div class="row">
         <div class="col-lg-12">
@@ -70,7 +77,7 @@
 <br />
 <div class="row">
     <div class="col-sm-6">
-        <a href="@Url.Action("reports5")" class="btn btn-warning">
+        <a href="@Url.Action("index")" class="btn btn-warning">
             Create Report
         </a>
     </div>

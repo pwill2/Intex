@@ -84,7 +84,7 @@
                             <li class="list-group-item">PARK-006</li>
                             <li class="list-group-item">Patheon</li>
                             <li class="list-group-item">Perrigo</li>
-                            <li class="list-group-item">Pfizer</li>
+                            <li class="list-group-item"><a onclick="empty()" style="color: #333;">Pfizer</a></li>
                             <li class="list-group-item">Pliva</li>
                             <li class="list-group-item">POLO-002</li>
                             <li class="list-group-item">QASI-004</li>
@@ -120,46 +120,46 @@
         <div class="col-md-6">
             <div class="well">
                 <div class="row">
-                    <div class="col-md-12">
-                        <h3>Company Name</h3>
-                        <img src="~/Content/img/businessSil.png" width="200" height="184" id="busSil"/>
-                        <div>
+                    <div class="visible" id="empty">
+                        <div class="col-md-12">
+                            <h3>Company Name</h3>
+                            <img src="~/Content/img/businessSil.png" width="200" height="184" id="centered" />
+                            <br />
+                            <!--Empty Form-->
                             <div class="row">
-                                <div class="col-lg-6">
+                                <div class="col-md-12">
                                     <div class="panel panel-default">
                                         <div class="panel-heading">
-                                            Striped Rows
+                                            <strong>Work Order Breakdown</strong>
                                         </div>
                                         <!-- /.panel-heading -->
                                         <div class="panel-body">
                                             <div class="table-responsive">
                                                 <table class="table table-striped">
-                                                    <thead>
-                                                        <tr>
-                                                            <th>#</th>
-                                                            <th>First Name</th>
-                                                            <th>Last Name</th>
-                                                            <th>Username</th>
-                                                        </tr>
-                                                    </thead>
                                                     <tbody>
                                                         <tr>
-                                                            <td>1</td>
-                                                            <td>Mark</td>
-                                                            <td>Otto</td>
-                                                            <td>mdo</td>
+                                                            <td><strong>Pending # of Work Orders</strong></td>
+                                                            <td>-</td>
                                                         </tr>
                                                         <tr>
-                                                            <td>2</td>
-                                                            <td>Jacob</td>
-                                                            <td>Thornton</td>
-                                                            <td>fat</td>
+                                                            <td><strong>Completed # of Work Orders</strong></td>
+                                                            <td>-</td>
                                                         </tr>
                                                         <tr>
-                                                            <td>3</td>
-                                                            <td>Larry</td>
-                                                            <td>the Bird</td>
-                                                            <td>twitter</td>
+                                                            <td><strong>Pending # of Assay's</strong></td>
+                                                            <td>-</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><strong>Completed # of Assay's</strong></td>
+                                                            <td>-</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><strong>Pending # of Test's</strong></td>
+                                                            <td>-</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><strong>Completed # of Test's</strong></td>
+                                                            <td>-</td>
                                                         </tr>
                                                     </tbody>
                                                 </table>
@@ -172,46 +172,74 @@
                                 </div>
                                 <!-- /.col-lg-6 -->
                             </div>
+                        </div>
+                        </div>
+                        <!--Filled Out Form-->
+                        <div class="hidden" id="full">
+                            <div class="col-md-12">
+                                <h3>Pfizer</h3>
+                                <img src="~/Content/img/pfizer.png" width="200" height="125" id="centered" />
+                                <br />
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading">
+                                                <strong>Work Order Breakdown</strong>
+                                            </div>
+                                            <!-- /.panel-heading -->
+                                            <div class="panel-body">
+                                                <div class="table-responsive">
+                                                    <table class="table table-striped">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td><strong>Pending # of Work Orders</strong></td>
+                                                                <td>3</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><strong>Completed # of Work Orders</strong></td>
+                                                                <td>13</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><strong>Pending # of Assay's</strong></td>
+                                                                <td>15</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><strong>Completed # of Assay's</strong></td>
+                                                                <td>39</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><strong>Pending # of Test's</strong></td>
+                                                                <td>45</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><strong>Completed # of Test's</strong></td>
+                                                                <td>156</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <!-- /.table-responsive -->
+                                            </div>
+                                            <!-- /.panel-body -->
+                                        </div>
+                                        <!-- /.panel -->
+                                        <a href="@Url.Action("Reports3")" class="btn btn-warning center-block">
+                                            View Details
+                                        </a>
+                                    </div>
+                                    <!-- /.col-lg-6 -->
+                                </div>
+                            </div>
                     </div>
-                </div>
             </div>
         </div>
 
     </div>
 </div>
+</div>
 
 <script>
     $(function () {
-
-        $('body').on('click', '.list-group .list-group-item', function () {
-            $(this).toggleClass('active');
-
-        });
-
-        /*$('.list-arrows button').click(function () {
-            var $button = $(this), actives = '';
-            if ($button.hasClass('move-left')) {
-                actives = $('.list-right ul li.active');
-                actives.clone().appendTo('.list-left ul');
-                actives.remove();
-            } else if ($button.hasClass('move-right')) {
-                actives = $('.list-left ul li.active');
-                actives.clone().appendTo('.list-right ul');
-                actives.remove();
-            }
-        });
-
-        $('.dual-list .selector').click(function () {
-            var $checkBox = $(this);
-            if (!$checkBox.hasClass('selected')) {
-                $checkBox.addClass('selected').closest('.well').find('ul li:not(.active)').addClass('active');
-                $checkBox.children('i').removeClass('glyphicon-unchecked').addClass('glyphicon-check');
-            } else {
-                $checkBox.removeClass('selected').closest('.well').find('ul li.active').removeClass('active');
-                $checkBox.children('i').removeClass('glyphicon-check').addClass('glyphicon-unchecked');
-            }
-        });*/
-
         $('[name="SearchDualList"]').keyup(function (e) {
             var code = e.keyCode || e.which;
             if (code == '9') return;
@@ -225,26 +253,24 @@
         });
     });
 </script>
-
-
-<!--
 <script>
-    $(function () {
-        $('body').on('click', '.list-group .list-group-item', function () {
-            $(this).toggleClass('active');
-        });
+    function empty() {
 
-        $('[name="SearchList"]').keyup(function (e) {
-            var code = e.keyCode || e.which;
-            if (code == '9') return;
-            if (code == '27') $(this).val(null);
-            var $rows = $(this)('.businessesreprorts').find('.list-group li');
-            var val = $.trim($(this).val()).replace(/ +/g, ' ').toLowerCase();
-            $rows.show().filter(function () {
-                var text = $(this).text().replace(/\s+/g, ' ').toLowerCase();
-                return !~text.indexOf(val);
-            }).hide();
-        });
-    });
+        if (jQuery('#empty').hasClass('visible')) {
+            $('#empty').addClass('hidden');
+        }
+
+        jQuery('#full').removeClass('hidden').addClass('visible');
+        $('#message').removeClass('hidden');
+    }
+
+    function full() {
+
+        if (jQuery('#full').hasClass('visible')) {
+            $('#full').addClass('hidden');
+        }
+
+        jQuery('#empty').removeClass('hidden').addClass('visible');
+        $('#message').removeClass('hidden');
+    }
 </script>
-    -->
