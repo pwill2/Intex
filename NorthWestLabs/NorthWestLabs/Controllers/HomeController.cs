@@ -73,5 +73,9 @@ namespace NorthWestLabs.Controllers
             return View("Login");
         }
 
+        public ActionResult Reports2()
+        {
+            return View("Reports2");
+        }
     }
 }
