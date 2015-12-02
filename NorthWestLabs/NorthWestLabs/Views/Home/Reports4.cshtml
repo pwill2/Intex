@@ -4,18 +4,17 @@
 }
 
 <div class="container">
-
-    <ul class="nav nav-tabs" role="tablist">
-        <li><a href="#assaysran" role="tab" data-toggle="tab">Assay's Ran</a></li>
-        <li><a href="#report" role="tab" data-toggle="tab">Report</a></li>
-    </ul>
+    <div class="col-md-12">
+        <ul class="nav nav-tabs" role="tablist">
+            <li class="active"><a href="#assaysran" role="tab" data-toggle="tab">Assay's Ran</a></li>
+            <li><a href="#report" role="tab" data-toggle="tab">Report</a></li>
+        </ul>
+    </div>
 
     <div class="tab-content">
-        
-        <div role="tabpanel" class="tab-pane" id="assaysran">
+        <div role="tabpanel" class="tab-pane active" id="assaysran">
             <h3 class="text-left">Assay's Ran for Work Order #2 - Pfizer</h3>
             <div class="row">
-
                 <div class="dual-list list-left col-md-5">
                     <div class="well text-left">
                         <div class="row">
@@ -23,11 +22,6 @@
                                 <div class="input-group">
                                     <span class="input-group-addon glyphicon glyphicon-search"></span>
                                     <input type="text" name="SearchDualList" class="form-control" placeholder="search" />
-                                </div>
-                            </div>
-                            <div class="col-md-2">
-                                <div class="btn-group">
-                                    <a class="btn btn-default selector" title="select all"><i class="glyphicon glyphicon-unchecked"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -54,9 +48,9 @@
                             <li class="list-group-item">Test PR1_4</li>
                             <li class="list-group-item disabled">#PFZR_Ram_2</li>
                             <li class="list-group-item">Test PR2_1</li>
-                            <li class="list-group-item">Test PR2_12</li>
-                            <li class="list-group-item">Test PR2_13</li>
-                            <li class="list-group-item">Test PR2_14</li>
+                            <li class="list-group-item">Test PR2_2</li>
+                            <li class="list-group-item">Test PR2_3</li>
+                            <li class="list-group-item">Test PR2_4</li>
                         </ul>
                     </div>
                 </div>
@@ -74,11 +68,6 @@
                 <div class="dual-list list-right col-md-5">
                     <div class="well">
                         <div class="row">
-                            <div class="col-md-2">
-                                <div class="btn-group">
-                                    <a class="btn btn-default selector" title="select all"><i class="glyphicon glyphicon-unchecked"></i></a>
-                                </div>
-                            </div>
                             <div class="col-md-10">
                                 <div class="input-group">
                                     <input type="text" name="SearchDualList" class="form-control" placeholder="search" />
@@ -91,28 +80,100 @@
                         </ul>
                         <div class="form-group">
                             <label>Analysis to be Ran: </label>
+                            <br />
                             <label class="checkbox-inline">
                                 <input type="checkbox">Correlation Analysis
                             </label>
-                            <label class="checkbox-inline">Significance Levels
-                                <input type="checkbox">
+                            <br />
+                            <label class="checkbox-inline">
+                                <input type="checkbox">Significance Levels
                             </label>
-                            <a style="color: #333;" id="added">Add to Report</a>
-                            <a style="color: #333;" id="continue">Continue</a>
                         </div>
-                        <div class="alert alert-success alert-dismissable">
-                            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. <a href="#" class="alert-link">Alert Link</a>.
-                        </div>
+                        <br />
+                        <a class="btn btn-warning center-block">Add to Report</a>
                     </div>
                 </div>
-
             </div>
         </div>
 
         <div role="tabpanel" class="tab-pane" id="report">
-            <h3 class="text-left">Report</h3>
-
+            <h3 class="text-left">Report for Work Order #2 - Pfizer</h3>
+            <div class="row">
+                <div class="col-md-5">
+                    <h4><storng>Correlation Test for PA1_1</storng></h4>
+                    <img src="~/Content/img/1.png" width="444" height="277" />
+                </div>
+                <div class="col-md-5">
+                    <br />
+                    <div class="form-group">
+                        <label>Summary:</label>
+                        <textarea class="form-control" rows="3"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" value="">Run Additional Tests
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-5">
+                    <h4><storng>Correlation Test for PA2_1</storng></h4>
+                    <img src="~/Content/img/2.png" width="444" height="277" />
+                </div>
+                <div class="col-md-5">
+                    <br />
+                    <div class="form-group">
+                        <label>Summary:</label>
+                        <textarea class="form-control" rows="3"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" value="">Run Additional Tests
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-5">
+                    <h4><storng>Correlation Test for PA3_1</storng></h4>
+                    <img src="~/Content/img/3.png" width="444" height="277" />
+                </div>
+                <div class="col-md-5">
+                    <br />
+                    <div class="form-group">
+                        <label>Summary:</label>
+                        <textarea class="form-control" rows="3"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" value="">Run Additional Tests
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-5">
+                    <h4><storng>Aggerate Correlation of PA1_1, PA2_1, and PA3_1</storng></h4>
+                    <img src="~/Content/img/4.png" width="444" height="277" />
+                </div>
+                <div class="col-md-5">
+                    <br />
+                    <div class="form-group">
+                        <label>Summary:</label>
+                        <textarea class="form-control" rows="3"></textarea>
+                        <br />
+                        <br />
+                        <a class="btn btn-default center-block" href="@Url.Action("Reports5")" style="color: #333;">View Report Summary</a>
+                    </div>
+                </div>
+            </div>            
         </div>
     </div>
 </div>

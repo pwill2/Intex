@@ -96,6 +96,10 @@ namespace NorthWestLabs.Controllers
         {
             return View();
         }
+        public ActionResult Reports6()
+        {
+            return View();
+        }
         public ActionResult customers()
         {
             return View();
