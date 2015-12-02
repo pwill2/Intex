@@ -1,0 +1,10 @@
+﻿.businessesreprorts ul{
+    height: 330px;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+#busSil{
+    margin: 0 auto;
+    display: block;
+}

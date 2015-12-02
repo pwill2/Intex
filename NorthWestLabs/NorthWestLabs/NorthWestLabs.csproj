@@ -554,6 +554,8 @@
     <Content Include="bower_components\raphael\raphael.js" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\img\businessSil.png" />
+    <Content Include="Content\ParkersStyles.css" />
     <Content Include="Content\sb-admin-2.css" />
     <Content Include="Content\timeline.css" />
     <Content Include="favicon.ico" />
