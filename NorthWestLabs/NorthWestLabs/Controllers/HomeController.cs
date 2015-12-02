@@ -99,5 +99,9 @@ namespace NorthWestLabs.Controllers
             return View();
         }
 
+        public ActionResult Reports2()
+        {
+            return View("Reports2");
+        }
     }
 }
