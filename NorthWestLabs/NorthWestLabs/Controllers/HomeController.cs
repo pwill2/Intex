@@ -112,5 +112,21 @@ namespace NorthWestLabs.Controllers
         {
             return View();
         }
+        public ActionResult GenerateQuote()
+        {
+            return View();
+        }
+        public ActionResult GenerateQuote2()
+        {
+            return View();
+        }
+        public ActionResult GenerateQuote2_5()
+        {
+            return View();
+        }
+        public ActionResult GenerateQuote3()
+        {
+            return View();
+        }
     }
 }

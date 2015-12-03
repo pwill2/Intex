@@ -9,4 +9,6 @@
     display: block;
 }
 
-
+#centeredtext{
+    text-align: center;
+}

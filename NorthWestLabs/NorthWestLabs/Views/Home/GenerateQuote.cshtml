@@ -1,0 +1,31 @@
+﻿@{
+    ViewBag.Title = "GenerateQuote";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<br />
+<div class="row">
+    <div class="col-md-12">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <strong>Generate A New Quote</strong>
+            </div>
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-4">
+                        <div id="centeredtext">If the customer is new, please create a new customer first, then complete the quote.</div><br />
+                        <a class="btn btn-primary" id="centered" href="@Url.Action("customers")" style="width:250px;">Create New Customer and Quote</a>
+                    </div>
+                    <div class="col-md-2"></div>
+                    <div class="col-md-4">
+                        <div id="centeredtext">
+                            If the customer is returning, click below to begin a new quote.</div><br />
+                            <a class="btn btn-primary" id="centered" href="@Url.Action("GenerateQuote2")" style="width:150px;">Create New Quote</a>
+                        </div>
+                    <div class="col-md-1"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
