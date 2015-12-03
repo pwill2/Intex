@@ -12,3 +12,8 @@
 #centeredtext{
     text-align: center;
 }
+
+.bold{
+    font-weight: bold;
+    color: #333;
+}
