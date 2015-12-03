@@ -7,14 +7,19 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col-lg-12">
-            <h1 class="page-header">Summary</h1>
+            <h1 class="page-header">Finalized Report</h1>
         </div>
 
         <!-- /.col-lg-12 -->
     </div>
     <div class="alert alert-warning alert-dismissable">
         <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
-        Your report was successfully saved! This Work Order was flagged as needing additional tests. A Seattle Sales Rep has been notified and will contact the customer.<a href="#" class="alert-link"></a>.
+        Your report was successfully saved! This Work Order was flagged as needing additional tests. 
+        A Seattle Sales Representative has been notified and will contact the customer.
+        <a href="@Url.Action("index")" class="btn btn-warning">
+            Return to Dashboard
+        </a>
+
     </div>
     <div class="row">
         <div class="col-lg-12">
@@ -59,6 +64,9 @@
                                     <td>3 Assay Aggergate</td>
                                     <td>Slight Positive Correlation</td>
                                 </tr>
+                                <tr>
+                                    <td>**This compound needs additional testing.</td>
+                                </tr>
                             </tbody>
                         </table>
                     </div>
@@ -78,27 +86,6 @@
 
     </div>
     <textarea class="form-control" rows="7"></textarea>
-</div>
-<br />
-<br />
-<div class="row">
-    <div class="col-sm-6">
-        <a href="@Url.Action("index")" class="btn btn-warning">
-            Create Report
-        </a>
-    </div>
-
-    <div class="form-group col-sm-2">
-        <label>Number of printed copies:</label>
-        <select class="form-control">
-            <option>0</option>
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
-        </select>
-    </div>
 </div>
 <!-- /.row -->
 </div>
