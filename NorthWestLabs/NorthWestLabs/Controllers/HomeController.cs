@@ -78,11 +78,29 @@ namespace NorthWestLabs.Controllers
             return View();
         }
 
+        public ActionResult Reports2()
+        {
+            return View();
+        }
+
+        public ActionResult Reports3()
+        {
+            return View();
+        }
+
         public ActionResult Reports4()
         {
             return View();
         }
+        public ActionResult Reports4_5()
+        {
+            return View();
+        }
         public ActionResult Reports5()
+        {
+            return View();
+        }
+        public ActionResult Reports6()
         {
             return View();
         }
@@ -98,10 +116,29 @@ namespace NorthWestLabs.Controllers
         {
             return View();
         }
-
-        public ActionResult Reports2()
+        public ActionResult GenerateQuote()
         {
-            return View("Reports2");
+            return View();
+        }
+        public ActionResult GenerateQuote2()
+        {
+            return View();
+        }
+        public ActionResult GenerateQuote2_5()
+        {
+            return View();
+        }
+        public ActionResult GenerateQuote3()
+        {
+            return View();
+        }
+        public ActionResult GenerateQuote4()
+        {
+            return View();
+        }
+        public ActionResult GenerateQuote5()
+        {
+            return View();
         }
     }
 }

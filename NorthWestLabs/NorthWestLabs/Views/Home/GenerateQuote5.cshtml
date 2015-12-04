@@ -1,0 +1,175 @@
+﻿
+@{
+    ViewBag.Title = "GenerateQuote5";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<br />
+<div class="alert alert-success alert-dismissable">
+    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+    Quote #301647 was successfully saved. Notification sent to GoodPharm of completed quote. 
+    <a href="@Url.Action("Index")" class="btn btn-success">Return to Dashboard</a>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                Quote Summary
+            </div>
+            <!-- /.panel-heading -->
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h4>Company Name: GoodPharm</h4>
+                    </div>
+                    <div class="col-md-4">
+                        <h4>Company Phone: (801) 948-4924</h4>
+                    </div>
+                    <div class="col-md-4">
+                        <h4>Quote Number: 301647</h4>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <h5>Company Contact: John Anderson</h5>
+                    </div>
+                    <div class="col-md-4">
+                        <h5>Contact Phone: (801) 948-5772</h5>
+                    </div>
+                    <div class="col-md-4">
+                        <h5>Contact Email: J.Anderson@goodpharm.com</h5>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <h5>Assigned NWL Sales Rep:<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Michael Jessop</h5>
+                    </div>
+                    <div class="col-md-4">
+                        <h5>Assigned NWL Sales Rep Phone:<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(206) 763-6252 ext. 036</h5>
+                    </div>
+                    <div class="col-md-4">
+                        <h5>Assigned NWL Sales Rep Email:<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mike.Jessop@nwlabs.com</h5>
+                    </div>
+                </div>
+                <hr />
+                <h3>Quote Specifications</h3>
+                <div class="row">
+                    <div class="col-md-4">
+                        <h5>Number of Compounds to be Tested: <strong>3</strong></h5>
+                    </div>
+                    <div class="col-md-4">
+                        <h5>Number of Assay's to be Run: <strong>3</strong></h5>
+                    </div>
+                    <div class="col-md-4">
+                        <h5>Number of Test's to be Run: <strong>11</strong></h5>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="table-responsive">
+                            <table class="table table-striped table-bordered table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>Compound Name</th>
+                                        <th>Assay Name</th>
+                                        <th>Test Name</th>
+                                        <th>Estimated Cost</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Arpipiprazole</td>
+                                        <td>Biochemical Pharmacology (MP)</td>
+                                        <td>Buccal Absorption Test</td>
+                                        <td>$65,000.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td>Absorption of Acidic Drugs Test</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td>Functional Test</td>
+                                        <td></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Zanamivir</td>
+                                        <td>ImmunoScreen&#174; (IS)</td>
+                                        <td>ANCA Screen with Reflex to ANCA Titer Test</td>
+                                        <td>$85,000.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td>Excretion of Drug Post Absorption Test</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td>L-Back Weight Test</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td>Timed Waste Test</td>
+                                        <td></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Nalfon</td>
+                                        <td>ProfilingScreen&#174; (PF)</td>
+                                        <td>Half Life Test</td>
+                                        <td>$135,000.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td>Absorption of Acidic Drugs Test</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td>L-Back Weight Test</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td>Timed Waste Test</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td style="text-align:right;"><strong>Est. Total</strong></td>
+                                        <td><strong>$285,000</strong></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <h5><strong>Quote Creation Date:</strong></h5>
+                        <h5>Dec. 2, 2015 9:18PM</h5>
+                    </div>
+                    <div class="col-md-4">
+                        <h5><strong>Estimated Completion Date:</strong></h5>
+                        <h5>Feb. 19, 2016 12:00pm</h5>
+                    </div>
+                    <div class="col-md-4">
+                       <a href="@Url.Action("Index")" class="btn btn-success">Return to Dashboard</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

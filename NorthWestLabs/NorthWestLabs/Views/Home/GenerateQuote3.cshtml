@@ -1,0 +1,248 @@
+﻿
+@{
+    ViewBag.Title = "GenerateQuote3";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Generate a New Quote</h2>
+<div class="row">
+    <div class="col-md-12">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                Create a New Quote
+            </div>
+            <!-- /.panel-heading -->
+            <div class="panel-body">
+                <div class="table-responsive">
+                    <table class="table table-striped table-bordered table-hover">
+                        <thead>
+                            <tr>
+                                <th>Compound To Be Tested</th>
+                                <th>Assay</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="form-group">
+                                        <input class="form-control" placeholder="Compound Name">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="form-group">
+                                        <select class="form-control">
+                                            <option>Biochemical Pharmacology (BP) - $65,000.00</option>
+                                                <option disabled="disabled">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Buccal Absorption Test</option>
+                                                <option disabled="disabled">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Absorption of Acidic Drugs Test</option>
+                                                <option disabled="disabled">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Functional Test</option>
+                                            <option>DiscoveryScreen&#174; (DS) - $75,000.00</option>
+                                                <option disabled="disabled">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cardio Genotype Test</option>
+                                                <option disabled="disabled">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Degradation Test</option>
+                                                <option disabled="disabled">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Half Life Test</option>
+                                            <option>ImmunoScreen&#174; (IS) - $85,000.00</option>
+                                                <option disabled="disabled">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ANCA Screen with Reflex to ANCA Titer Test</option>
+                                                <option disabled="disabled">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Excretion of Drug Post Absorption Test</option>
+                                                <option disabled="disabled">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;L-Back Weight Test</option>
+                                                <option disabled="disabled">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Timed Waste Test</option> 
+                                            <option>PharmaScreen&#174; (PS) - $55,000.00</option>
+                                                <option disabled="disabled">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Absorption of Acidic Drugs Test</option>
+                                                <option disabled="disabled">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Excretion of Drug Post Absorption Test</option>
+                                                <option disabled="disabled">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Buccal Absorption Test</option>
+                                            <option>ProfilingScreen&#174; (PF) - $135,000.00</option>
+                                                <option disabled="disabled">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Half Life Test</option>
+                                                <option disabled="disabled">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Absorption of Acidic Drugs Test</option>
+                                                <option disabled="disabled">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;L-Back Weight Test</option>
+                                                <option disabled="disabled">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Timed Waste Test</option> 
+                                            <option>CustomScreen&#174; (CS) - $25,000.00</option>
+                                                <option disabled="disabled">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cardio Genotype Test</option>
+                                                <option disabled="disabled">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Degradation Test</option>
+                                        </select>
+                                    </div>
+                                </td>
+                                <!--<td>
+                                    <div class="form-group">
+                                        <select class="form-control">
+                                            <optgroup label="Biochemical Pharmacology (BP)">
+                                                <option disabled="disabled">Buccal Absorption Test</option>
+                                                <option disabled="disabled">Absorption of Acidic Drugs</option>
+                                            </optgroup>
+                                            <optgroup label="DiscoveryScreen&#174; (DS)">
+                                                <option disabled="disabled">Cardio Genotype</option>
+                                            </optgroup>
+                                                <option disabled="disabled">ANCA Screen with Reflex to ANCA Titer</option>
+                                                <option disabled="disabled">Excretion of Drug Post Absorption Test</option>
+                                        </select>
+                                    </div>
+                                </td>-->
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="form-group">
+                                        <input class="form-control" placeholder="Compound Name">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="form-group">
+                                        <select class="form-control">
+                                            <option>Biochemical Pharmacology (BP) - $65,000.00</option>
+                                                <option disabled="disabled">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Buccal Absorption Test</option>
+                                                <option disabled="disabled">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Absorption of Acidic Drugs Test</option>
+                                                <option disabled="disabled">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Functional Test</option>
+                                            <option>DiscoveryScreen&#174; (DS) - $75,000.00</option>
+                                                <option disabled="disabled">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cardio Genotype Test</option>
+                                                <option disabled="disabled">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Degradation Test</option>
+                                                <option disabled="disabled">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Half Life Test</option>
+                                            <option>ImmunoScreen&#174; (IS) - $85,000.00</option>
+                                                <option disabled="disabled">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ANCA Screen with Reflex to ANCA Titer Test</option>
+                                                <option disabled="disabled">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Excretion of Drug Post Absorption Test</option>
+                                                <option disabled="disabled">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;L-Back Weight Test</option>
+                                                <option disabled="disabled">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Timed Waste Test</option>
+                                            <option>PharmaScreen&#174; (PS) - $55,000.00</option>
+                                                <option disabled="disabled">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Absorption of Acidic Drugs Test</option>
+                                                <option disabled="disabled">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Excretion of Drug Post Absorption Test</option>
+                                                <option disabled="disabled">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Buccal Absorption Test</option>
+                                            <option>ProfilingScreen&#174; (PF) - $135,000.00</option>
+                                                <option disabled="disabled">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Half Life Test</option>
+                                                <option disabled="disabled">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Absorption of Acidic Drugs Test</option>
+                                                <option disabled="disabled">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;L-Back Weight Test</option>
+                                                <option disabled="disabled">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Timed Waste Test</option>
+                                            <option>CustomScreen&#174; (CS) - $25,000.00</option>
+                                                <option disabled="disabled">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cardio Genotype Test</option>
+                                                <option disabled="disabled">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Degradation Test</option>
+                                        </select>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="form-group">
+                                        <input class="form-control" placeholder="Compound Name">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="form-group">
+                                        <select class="form-control">
+                                            <option>Biochemical Pharmacology (BP) - $65,000.00</option>
+                                                <option disabled="disabled">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Buccal Absorption Test</option>
+                                                <option disabled="disabled">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Absorption of Acidic Drugs Test</option>
+                                                <option disabled="disabled">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Functional Test</option>
+                                            <option>DiscoveryScreen&#174; (DS) - $75,000.00</option>
+                                                <option disabled="disabled">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cardio Genotype Test</option>
+                                                <option disabled="disabled">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Degradation Test</option>
+                                                <option disabled="disabled">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Half Life Test</option>
+                                            <option>ImmunoScreen&#174; (IS) - $85,000.00</option>
+                                                <option disabled="disabled">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ANCA Screen with Reflex to ANCA Titer Test</option>
+                                                <option disabled="disabled">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Excretion of Drug Post Absorption Test</option>
+                                                <option disabled="disabled">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;L-Back Weight Test</option>
+                                                <option disabled="disabled">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Timed Waste Test</option>
+                                            <option>PharmaScreen&#174; (PS) - $55,000.00</option>
+                                                <option disabled="disabled">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Absorption of Acidic Drugs Test</option>
+                                                <option disabled="disabled">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Excretion of Drug Post Absorption Test</option>
+                                                <option disabled="disabled">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Buccal Absorption Test</option>
+                                            <option>ProfilingScreen&#174; (PF) - $135,000.00</option>
+                                                <option disabled="disabled">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Half Life Test</option>
+                                                <option disabled="disabled">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Absorption of Acidic Drugs Test</option>
+                                                <option disabled="disabled">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;L-Back Weight Test</option>
+                                                <option disabled="disabled">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Timed Waste Test</option>
+                                            <option>CustomScreen&#174; (CS) - $25,000.00</option>
+                                                <option disabled="disabled">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cardio Genotype Test</option>
+                                                <option disabled="disabled">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Degradation Test</option>
+                                        </select>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="form-group">
+                                        <input class="form-control" placeholder="Compound Name">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="form-group">
+                                        <select class="form-control">
+                                            <option>Biochemical Pharmacology (BP) - $65,000.00</option>
+                                                <option disabled="disabled">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Buccal Absorption Test</option>
+                                                <option disabled="disabled">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Absorption of Acidic Drugs Test</option>
+                                                <option disabled="disabled">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Functional Test</option>
+                                            <option>DiscoveryScreen&#174; (DS) - $75,000.00</option>
+                                                <option disabled="disabled">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cardio Genotype Test</option>
+                                                <option disabled="disabled">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Degradation Test</option>
+                                                <option disabled="disabled">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Half Life Test</option>
+                                            <option>ImmunoScreen&#174; (IS) - $85,000.00</option>
+                                                <option disabled="disabled">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ANCA Screen with Reflex to ANCA Titer Test</option>
+                                                <option disabled="disabled">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Excretion of Drug Post Absorption Test</option>
+                                                <option disabled="disabled">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;L-Back Weight Test</option>
+                                                <option disabled="disabled">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Timed Waste Test</option>
+                                            <option>PharmaScreen&#174; (PS) - $55,000.00</option>
+                                                <option disabled="disabled">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Absorption of Acidic Drugs Test</option>
+                                                <option disabled="disabled">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Excretion of Drug Post Absorption Test</option>
+                                                <option disabled="disabled">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Buccal Absorption Test</option>
+                                            <option>ProfilingScreen&#174; (PF) - $135,000.00</option>
+                                                <option disabled="disabled">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Half Life Test</option>
+                                                <option disabled="disabled">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Absorption of Acidic Drugs Test</option>
+                                                <option disabled="disabled">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;L-Back Weight Test</option>
+                                                <option disabled="disabled">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Timed Waste Test</option>
+                                            <option>CustomScreen&#174; (CS) - $25,000.00</option>
+                                                <option disabled="disabled">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cardio Genotype Test</option>
+                                                <option disabled="disabled">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Degradation Test</option>
+                                        </select>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="form-group">
+                                        <input class="form-control" placeholder="Compound Name">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="form-group">
+                                        <select class="form-control">
+                                            <option>Biochemical Pharmacology (BP) - $65,000.00</option>
+                                                <option disabled="disabled">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Buccal Absorption Test</option>
+                                                <option disabled="disabled">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Absorption of Acidic Drugs Test</option>
+                                                <option disabled="disabled">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Functional Test</option>
+                                            <option>DiscoveryScreen&#174; (DS) - $75,000.00</option>
+                                                <option disabled="disabled">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cardio Genotype Test</option>
+                                                <option disabled="disabled">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Degradation Test</option>
+                                                <option disabled="disabled">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Half Life Test</option>
+                                            <option>ImmunoScreen&#174; (IS) - $85,000.00</option>
+                                                <option disabled="disabled">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ANCA Screen with Reflex to ANCA Titer Test</option>
+                                                <option disabled="disabled">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Excretion of Drug Post Absorption Test</option>
+                                                <option disabled="disabled">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;L-Back Weight Test</option>
+                                                <option disabled="disabled">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Timed Waste Test</option>
+                                            <option>PharmaScreen&#174; (PS) - $55,000.00</option>
+                                                <option disabled="disabled">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Absorption of Acidic Drugs Test</option>
+                                                <option disabled="disabled">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Excretion of Drug Post Absorption Test</option>
+                                                <option disabled="disabled">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Buccal Absorption Test</option>
+                                            <option>ProfilingScreen&#174; (PF) - $135,000.00</option>
+                                                <option disabled="disabled">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Half Life Test</option>
+                                                <option disabled="disabled">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Absorption of Acidic Drugs Test</option>
+                                                <option disabled="disabled">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;L-Back Weight Test</option>
+                                                <option disabled="disabled">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Timed Waste Test</option>
+                                            <option>CustomScreen&#174; (CS) - $25,000.00</option>
+                                                <option disabled="disabled">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cardio Genotype Test</option>
+                                                <option disabled="disabled">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Degradation Test</option>
+                                        </select>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                        <div class="col-md-3">
+                            <form role="form">
+                                <div class="form-group">
+                                    <label>Creation Date</label>
+                                    <input class="form-control">
+                                </div>
+                            </form>
+                        </div>
+                </div>
+                <a href="@Url.Action("GenerateQuote4")" class="btn btn-success">Continue</a>
+                <!-- /.table-responsive -->
+            </div>
+            <!-- /.panel-body -->
+        </div>
+        <!-- /.panel -->
+    </div>
+</div>

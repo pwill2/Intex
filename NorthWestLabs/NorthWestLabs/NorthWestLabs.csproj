@@ -554,7 +554,14 @@
     <Content Include="bower_components\raphael\raphael.js" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\img\1.png" />
+    <Content Include="Content\img\2.png" />
+    <Content Include="Content\img\3.png" />
+    <Content Include="Content\img\4.png" />
     <Content Include="Content\img\businessSil.png" />
+    <Content Include="Content\img\correlation.png" />
+    <Content Include="Content\img\img250.png" />
+    <Content Include="Content\img\pfizer.png" />
     <Content Include="Content\ParkersStyles.css" />
     <Content Include="Content\sb-admin-2.css" />
     <Content Include="Content\timeline.css" />
@@ -914,6 +921,15 @@
     <Content Include="Views\Home\customers2.cshtml" />
     <Content Include="Views\Home\customers3.cshtml" />
     <Content Include="Views\Home\Reports2.cshtml" />
+    <Content Include="Views\Home\Reports3.cshtml" />
+    <Content Include="Views\Home\Reports6.cshtml" />
+    <Content Include="Views\Home\GenerateQuote2.cshtml" />
+    <Content Include="Views\Home\GenerateQuote.cshtml" />
+    <Content Include="Views\Home\GenerateQuote3.cshtml" />
+    <Content Include="Views\Home\GenerateQuote2_5.cshtml" />
+    <Content Include="Views\Home\GenerateQuote4.cshtml" />
+    <Content Include="Views\Home\GenerateQuote5.cshtml" />
+    <Content Include="Views\Home\Reports4_5.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

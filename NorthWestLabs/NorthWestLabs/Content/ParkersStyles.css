@@ -4,7 +4,16 @@
     overflow-y: scroll;
 }
 
-#busSil{
+#centered{
     margin: 0 auto;
     display: block;
+}
+
+#centeredtext{
+    text-align: center;
+}
+
+.bold{
+    font-weight: bold;
+    color: #333;
 }

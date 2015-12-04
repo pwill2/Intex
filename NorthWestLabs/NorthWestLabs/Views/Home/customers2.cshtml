@@ -1,12 +1,88 @@
-﻿
-@{
+﻿@{
     ViewBag.Title = "customers";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 <div class="container-fluid">
     <div class="row">
         <div class="col-lg-12">
-            <h1 class="page-header">Blank</h1>
+            <h1 class="page-header">Add New Customer</h1>
+        </div>
+        <!-- /.col-lg-12 -->
+    </div>
+    <div class="col-lg-12">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                Add Customer
+            </div>
+            <!-- /.panel-heading -->
+            <div class="panel-body">
+                <div class="panel panel-default">
+                    <img src="http://simpleicon.com/wp-content/uploads/user1.png" class="img-responsive img-thumbnail centerimg" style="height:320px; width: 288px;"><!-- /.panel-heading -->
+                    <div class="form-group">
+                        <label>Choose Company Image</label>
+                        <input type="file">
+                    </div>
+                    <div class="panel-body">
+                        <div class="table-responsive">
+                            <table class="table">
+
+                                <tbody>
+                                    <tr>
+                                        <td><strong>Company Name:</strong></td>
+                                        <td><input class="form-control"></td>
+
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Address 1:</strong></td>
+                                        <td><input class="form-control"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Address 2:</strong></td>
+                                        <td><input class="form-control"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>City:</strong></td>
+                                        <td><input class="form-control"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>State:</strong></td>
+                                        <td><input class="form-control"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Zip:</strong></td>
+                                        <td><input class="form-control"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Country:</strong></td>
+                                        <td><input class="form-control"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Company Phone:</strong></td>
+                                        <td><input class="form-control"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Contact Name:</strong></td>
+                                        <td><input class="form-control"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Contact Phone:</strong></td>
+                                        <td><input class="form-control"></td>
+                                    </tr>
+
+
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- /.table-responsive -->
+                    </div>
+                    <!-- /.panel-body -->
+                </div>
+
+                <a href="@Url.Action("customers3")" class="btn btn-warning center-block">
+                    Save Customer
+                </a>
+
+            </div>
         </div>
         <!-- /.col-lg-12 -->
     </div>
@@ -14,3 +90,4 @@
 </div>
 <!-- /.container-fluid -->
 
+Add Comment

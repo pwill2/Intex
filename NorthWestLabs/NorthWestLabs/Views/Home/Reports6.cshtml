@@ -1,13 +1,25 @@
-﻿@{
-    ViewBag.Title = "Reports5";
+﻿
+@{
+    ViewBag.Title = "Reports6";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
+
 <div class="container-fluid">
     <div class="row">
         <div class="col-lg-12">
-            <h1 class="page-header">Report Summary</h1>
+            <h1 class="page-header">Finalized Report</h1>
         </div>
+
         <!-- /.col-lg-12 -->
+    </div>
+    <div class="alert alert-warning alert-dismissable">
+        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+        Your report was successfully saved! This Work Order was flagged as needing additional tests. 
+        A Seattle Sales Representative has been notified and will contact the customer.
+        <a href="@Url.Action("index")" class="btn btn-warning">
+            Return to Dashboard
+        </a>
+
     </div>
     <div class="row">
         <div class="col-lg-12">
@@ -53,8 +65,6 @@
                                     <td>Slight Positive Correlation</td>
                                 </tr>
                                 <tr>
-                                </tr>
-                                <tr>
                                     <td>**This compound needs additional testing.</td>
                                 </tr>
                             </tbody>
@@ -73,28 +83,16 @@
 
     <div class="form-group">
         <label>Conclusions:</label>
+
     </div>
-    <textarea class="form-control" rows="7"></textarea>
+    <textarea class="form-control" rows="7">
+    Led data in digital digital, integer broadband reducer, with disk gigabyte. Bridgeware, bypass, transponder broadband software high sampling bypass disk developer, kilohertz mainframe floating-point. Floating-point logarithmic silicon potentiometer procedural mainframe reflective integral. Software includes bus prototype connectivity network element infrared infrared. Capacitance computer data, sampling computer integral led cache. Extended broadband femtosecond cache device integral processor pc generator software software, bridgeware with gigabyte. Broadband plasma digital technician femtosecond feedback. Anomoly, remote read-only, encapsulated with transponder recognition software or remote supporting converter.
+    
+    Pc video inversion, frequency anomoly feedback ethernet normalizing. Processor prompt controller cache procedural fragmentation silicon record audio read-only, normalizing transponder high. Video, or, cache broadband extended phaselock harmonic debugged, broadband mainframe arrray feedback device procedural log. Read-only remote, transponder, gigabyte, controller integer.
+    
+    Pc video inversion, frequency anomoly feedback ethernet normalizing. Processor prompt controller cache procedural fragmentation silicon record audio read-only, normalizing transponder high. Video, or, cache broadband extended phaselock harmonic debugged, broadband mainframe arrray feedback device procedural log. Read-only remote, transponder, gigabyte, controller integer. 
+    </textarea>
+    <br />
 </div>
-<br />
-<br />
-<div class="row">
-    <div class="form-group col-md-2">
-        <label>Number of printed copies:</label>
-        <select class="form-control">
-            <option>0</option>
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
-        </select>
-    </div>
-    <div class="col-md-6">
-        <a href="@Url.Action("Reports6")" class="btn btn-warning">
-            Create Report
-        </a>
-    </div>
-</div>
+
 <!-- /.row -->
-<!-- /.container-fluid -->
