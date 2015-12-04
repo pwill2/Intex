@@ -929,6 +929,7 @@
     <Content Include="Views\Home\GenerateQuote2_5.cshtml" />
     <Content Include="Views\Home\GenerateQuote4.cshtml" />
     <Content Include="Views\Home\GenerateQuote5.cshtml" />
+    <Content Include="Views\Home\Reports4_5.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
