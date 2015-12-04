@@ -12,7 +12,7 @@ namespace NorthWestLabs.Domain
         {
             var menu = new List<Navbar>();
             menu.Add(new Navbar { Id = 1, nameOption = "Dashboard", controller = "Home", action = "Index", imageClass = "fa fa-dashboard fa-fw", status = true, isParent = false, parentId = 0 });
-            menu.Add(new Navbar { Id = 2, nameOption = "Charts", imageClass = "fa fa-bar-chart-o fa-fw", status = true, isParent = true, parentId = 0 });
+            /*menu.Add(new Navbar { Id = 2, nameOption = "Charts", imageClass = "fa fa-bar-chart-o fa-fw", status = true, isParent = true, parentId = 0 });
             menu.Add(new Navbar { Id = 3, nameOption = "Flot Charts", controller = "Home", action = "FlotCharts", status = true, isParent = false, parentId = 2 });
             menu.Add(new Navbar { Id = 4, nameOption = "Morris.js Charts", controller = "Home", action = "MorrisCharts", status = true, isParent = false, parentId = 2 });
             menu.Add(new Navbar { Id = 5, nameOption = "Tables", controller = "Home", action = "Tables", imageClass = "fa fa-table fa-fw", status = true, isParent = false, parentId = 0 });
@@ -27,11 +27,14 @@ namespace NorthWestLabs.Domain
             menu.Add(new Navbar { Id = 14, nameOption = "Multi-Level Dropdown", imageClass = "fa fa-sitemap fa-fw", status = true, isParent = true, parentId = 0 });
             menu.Add(new Navbar { Id = 15, nameOption = "Second Level Item", status = true, isParent = false, parentId = 14 });
             menu.Add(new Navbar { Id = 16, nameOption = "Sample Pages", imageClass = "fa fa-files-o fa-fw", status = true, isParent = true, parentId = 0 });
-            menu.Add(new Navbar { Id = 17, nameOption = "Blank Page", controller = "Home", action = "Blank", status = true, isParent = false, parentId = 16 });
-            menu.Add(new Navbar { Id = 18, nameOption = "Login Page", controller = "Home", action = "Login", status = true, isParent = false, parentId = 16 });
+            menu.Add(new Navbar { Id = 17, nameOption = "Blank Page", controller = "Home", action = "Blank", status = true, isParent = false, parentId = 16 });*/
+            menu.Add(new Navbar { Id = 18, nameOption = "Sales", controller = "Home", action = "#", imageClass = "fa fa-money fa-fw", status = true, isParent = true, parentId = 18 }); 
             menu.Add(new Navbar { Id = 19, nameOption = "Reports", controller = "Home", action = "Reports", imageClass = "fa fa-table fa-fw", status = true, isParent = false, parentId = 0 });
             menu.Add(new Navbar { Id = 20, nameOption = "Customers", controller = "Home", action = "customers", imageClass = "fa fa-male fa-fw", status = true, isParent = false, parentId = 0 });
             menu.Add(new Navbar { Id = 21, nameOption = "Quote", controller = "Home", action = "GenerateQuote", imageClass = "fa fa-files-o fa-fw", status = true, isParent = false, parentId = 0 });
+            menu.Add(new Navbar { Id = 22, nameOption = "Invoices", controller = "Home", action = "#", status = true, isParent = false, parentId = 18 });
+            menu.Add(new Navbar { Id = 23, nameOption = "Payments", controller = "Home", action = "#", status = true, isParent = false, parentId = 18 });
+            menu.Add(new Navbar { Id = 24, nameOption = "New Sale", controller = "Home", action = "#", status = true, isParent = false, parentId = 18 });
             return menu.ToList();
         }
     }
